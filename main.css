@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: #00ff00; /* Green text */
+    font-family: 'Courier New', monospace; /* Pixel-like hackery font */
+}
+
+.hacker-theme {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.code-text {
+    font-size: 1.2em;
+    border: 1px solid #00ff00;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 255, 0, 0.1); /* Light green background */
+}
