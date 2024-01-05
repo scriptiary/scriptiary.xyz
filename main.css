@@ -6,7 +6,7 @@ body {
     font-family: 'Courier New', monospace; /* Pixel-like hackery font */
 }
 
-.hacker-theme {
+.header {
     text-align: center;
     padding: 20px;
 }
@@ -15,7 +15,7 @@ h1 {
     font-size: 2em;
 }
 
-.code-text {
+.tagline {
     font-size: 1.2em;
     border: 1px solid #00ff00;
     padding: 10px;
