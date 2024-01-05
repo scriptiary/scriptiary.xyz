@@ -9,8 +9,9 @@ body {
 .header {
     text-align: center;
     padding: 20px;
-    border-bottom: 20px
-    border-radius: 4px
+    border-bottom: 20px;
+    border-radius: 4px;
+    border-color: #ffffff;
 }
 
 h1 {
