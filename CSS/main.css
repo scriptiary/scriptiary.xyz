@@ -1,0 +1,94 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #000000;
+    color: #44ff44;
+    font-family: 'Courier New', monospace;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    border-bottom: dashed #00cc00 4px;
+    margin: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    color: #44ff44;
+}
+
+.tagline {
+    font-size: 1.2em;
+    border: 1px solid #008000;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(0, 204, 0, 0.1);
+    color: #44ff44;
+}
+
+.article-container {
+    background-color: #002200;
+    text-align: center;
+    box-shadow: 0 0 5px 5px #002200;
+}
+
+.article {
+    border: groove #00cc00 5px;
+    border-radius: 10px;
+    position: relative;
+    width: 30%;
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+    vertical-align: top;
+    text-decoration: none;
+    color: #44ff44;
+    box-shadow: 0 0 20px rgba(0, 204, 0, 0.4);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 204, 0, 0.8);
+    cursor: pointer;
+}
+
+.article img {
+    width: 100%;
+}
+
+footer {
+    margin-top: 90px;
+    background-color: #031600;
+    border-top: dotted #008800 4px;
+    text-align: center;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.caption {
+    text-align: right;
+    font-style: italic;
+    margin-right: 20px;
+}
+
+.title {
+    text-decoration: underline;
+    font-size: 50px;
+    text-align: center;
+    margin: 30px;
+}
+
+.description {
+    margin: 10px;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .article {
+        width: 90%;
+    }
+}

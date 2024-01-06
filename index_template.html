@@ -14,16 +14,16 @@
     </div>
 
     <div class="article-container">
-        
-                <a href="/articles/title-010624.html" class="article">
-                    <img src="/images/example.png" alt="Title Image" class="article-image">
+        {% for article in articles %}
+                <a href="{{ article.url }}" class="article">
+                    <img src="{{ article.image }}" alt="{{ article.title }} Image" class="article-image">
                     <div class="article-content">
-                        <h2>Title</h2>
-                        <p class="short-description">short Desc</p>
-                        <p class="caption">06 January 2024</p>
+                        <h2>{{ article.title }}</h2>
+                        <p class="short-description">{{ article.short_description }}</p>
+                        <p class="caption">{{ article.date }}</p>
                     </div>
                 </a>
-        
+        {% endfor %}
     </div>
 
     <footer>
