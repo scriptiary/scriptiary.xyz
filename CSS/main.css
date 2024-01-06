@@ -87,6 +87,10 @@ footer {
     font-size: 20px;
 }
 
+a {
+    color: #44ff44
+}
+
 @media only screen and (max-width: 768px) {
     .article {
         width: 90%;
