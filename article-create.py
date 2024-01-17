@@ -29,7 +29,7 @@ def create_article(title, short_description, long_description):
     <p class=short-description>{{ short_description }}</p>
     <p class=description>{{ long_description }}</p>
     <footer>
-        <p>© Scriptiary 2023</p>
+        <p>© Scriptiary 2024</p>
         <a href="/legal/privacy-policy.html" style="text-decoration: underline; cursor: pointer;"><p>Privacy Policy</p></a>
         <a href="/legal/disclaimer.html" style="text-decoration: underline; cursor: pointer;"><p>Disclaimers</p></a>
     </footer>
