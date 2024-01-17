@@ -22,7 +22,7 @@ def create_article(title, short_description, long_description):
 </head>
 <body>
     <div class="header">
-        <h1>Scriptiary</h1>
+        <div class="container"><h1><img src="/images/favicon.ico" class="logo">Scriptiary</h1></div>
         <p class="tagline">Unlocking Roblox - One line of code at a time</p>
     </div>
     <h1 class=title>{{ title }}</h1>
