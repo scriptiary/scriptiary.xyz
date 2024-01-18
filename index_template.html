@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,29 +8,37 @@
     <link rel="stylesheet" href="/CSS/main.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
+
 <body>
     <div class="header">
-        <div class="container"><h1><img src="/images/favicon.ico" class="logo">Scriptiary</h1></div>
+        <div class="container">
+            <h1><img src="/images/favicon.ico" class="logo">Scriptiary</h1>
+        </div>
         <p class="tagline">Unlocking Roblox - One line of code at a time</p>
     </div>
 
     <div class="article-container">
         {% for article in articles %}
-                <a href="{{ article.url }}" class="article">
-                    <img src="{{ article.image }}" alt="{{ article.title }} Image" class="article-image">
-                    <div class="article-content">
-                        <h2>{{ article.title }}</h2>
-                        <p class="short-description">{{ article.short_description }}</p>
-                        <p class="caption">{{ article.date }}</p>
-                    </div>
-                </a>
+        <a href="{{ article.url }}" class="article">
+            <img src="{{ article.image }}" alt="{{ article.title }} Image" class="article-image">
+            <div class="article-content">
+                <h2>{{ article.title }}</h2>
+                <p class="short-description">{{ article.short_description }}</p>
+                <p class="caption">{{ article.date }}</p>
+            </div>
+        </a>
         {% endfor %}
     </div>
 
     <footer>
         <p>© Scriptiary 2024</p>
-        <a href="/legal/privacy-policy" style="text-decoration: underline; cursor: pointer;"><p>Privacy Policy</p></a>
-        <a href="/legal/disclaimers" style="text-decoration: underline; cursor: pointer;"><p>Disclaimers</p></a>
+        <a href="/legal/privacy-policy.html" style="text-decoration: underline; cursor: pointer;">
+            <p>Privacy Policy</p>
+        </a>
+        <a href="/legal/terms-of-service.html" style="text-decoration: underline; cursor: pointer;">
+            <p>Terms Of Service</p>
+        </a>
     </footer>
 </body>
+
 </html>

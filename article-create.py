@@ -2,6 +2,7 @@ import os
 from datetime import datetime
 from jinja2 import Template
 
+
 def create_article(title, short_description, long_description):
     # Format the current date and time
     current_date = datetime.now().strftime("%m%d%y")
@@ -31,7 +32,7 @@ def create_article(title, short_description, long_description):
     <footer>
         <p>© Scriptiary 2024</p>
         <a href="/legal/privacy-policy.html" style="text-decoration: underline; cursor: pointer;"><p>Privacy Policy</p></a>
-        <a href="/legal/disclaimer.html" style="text-decoration: underline; cursor: pointer;"><p>Disclaimers</p></a>
+        <a href="/legal/terms-of-service.html" style="text-decoration: underline; cursor: pointer;"><p>Terms Of Service</p></a>
     </footer>
 </body>
 </html>
@@ -39,9 +40,16 @@ def create_article(title, short_description, long_description):
 
     # Create the file and write the HTML template
     with open(file_name, "w") as file:
-        file.write(Template(html_template).render(title=title, short_description=short_description, long_description=long_description))
+        file.write(
+            Template(html_template).render(
+                title=title,
+                short_description=short_description,
+                long_description=long_description,
+            )
+        )
 
     print(f"Article created successfully: {file_name}")
+
 
 def generate_index_page():
     # Get the current date
@@ -53,25 +61,33 @@ def generate_index_page():
         if file_name.endswith(".html"):
             with open(os.path.join("articles", file_name), "r") as article_file:
                 article_content = article_file.read()
-                
+
                 # Extract title, short description, and description
-                title = article_content.split('<h1 class=title>')[1].split('</h1>')[0]
-                short_description = article_content.split('<p class=short-description>')[1].split('</p>')[0]
-                description = article_content.split('<p class=description>')[1].split('</p>')[0]
+                title = article_content.split("<h1 class=title>")[1].split("</h1>")[0]
+                short_description = article_content.split(
+                    "<p class=short-description>"
+                )[1].split("</p>")[0]
+                description = article_content.split("<p class=description>")[1].split(
+                    "</p>"
+                )[0]
 
                 # Try to extract date, use current date if the string is not found
                 try:
-                    date = article_content.split('<p class="caption">')[1].split('</p>')[0]
+                    date = article_content.split('<p class="caption">')[1].split(
+                        "</p>"
+                    )[0]
                 except IndexError:
                     date = current_date
 
-                articles.append({
-                    "title": title,
-                    "short_description": short_description,
-                    "date": date,
-                    "url": f"/articles/{file_name}",
-                    "image": "/images/example.png"  # Replace with the actual image path
-                })
+                articles.append(
+                    {
+                        "title": title,
+                        "short_description": short_description,
+                        "date": date,
+                        "url": f"/articles/{file_name}",
+                        "image": "/images/example.png",  # Replace with the actual image path
+                    }
+                )
 
     # Load the index template and render it with the article data
     index_template = Template(open("index_template.html", "r").read())
@@ -81,9 +97,14 @@ def generate_index_page():
     with open("index.html", "w") as index_file:
         index_file.write(index_content)
 
+
 if __name__ == "__main__":
     article_title = input("Enter the title for the article: ")
-    short_description = input("Enter the short description for the article (visible on index): ")
-    long_description = input("Enter the long description for the article (visible on article page): ")
+    short_description = input(
+        "Enter the short description for the article (visible on index): "
+    )
+    long_description = input(
+        "Enter the long description for the article (visible on article page): "
+    )
     create_article(article_title, short_description, long_description)
     generate_index_page()
