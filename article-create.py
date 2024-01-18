@@ -18,7 +18,7 @@ def create_article(title, short_description, long_description):
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }} - Scriptiary</title>
     <link rel="stylesheet" href="/CSS/main.css">
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" alt="Logo for scriptiary.xyz">
     <style>.short-description{ color: #000000; display: none;}</style>
 </head>
 <body>
