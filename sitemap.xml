@@ -3,41 +3,21 @@
 	<url>
 		<loc>https://scriptiary.xyz</loc>
 		<priority>1.00</priority>
-		<lastmod>2024-02-19</lastmod>
+		<lastmod>2024-04-12</lastmod>
 	</url>
 	<url>
-		<loc>https://scriptiary.xyz/index_template.html</loc>
-		<priority>0.67</priority>
-		<lastmod>2024-02-19</lastmod>
-	</url>
-	<url>
-		<loc>https://scriptiary.xyz/articles/arceus-x-neo-ios-update-fix-crashing-020324.html</loc>
+		<loc>https://scriptiary.xyz/articles/arsenal-script.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-02-21</lastmod>
-	</url>
-	<url>
-		<loc>https://scriptiary.xyz/articles/roblox-iphone-script-executor-ipa-unpatched-hack-exploit-011724.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-02-21</lastmod>
-	</url>
-	<url>
-		<loc>https://scriptiary.xyz/downloads/arceus.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-02-19</lastmod>
-	</url>
-	<url>
-		<loc>https://scriptiary.xyz/downloads/arceus2.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-02-19</lastmod>
-	</url>
-	<url>
-		<loc>https://scriptiary.xyz/legal/privacy-policy.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-02-19</lastmod>
+		<lastmod>2024-04-12</lastmod>
 	</url>
 	<url>
 		<loc>https://scriptiary.xyz/legal/terms-of-service.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-02-19</lastmod>
+		<lastmod>2024-04-12</lastmod>
+	</url>
+	<url>
+		<loc>https://scriptiary.xyz/legal/privacy-policy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-04-12</lastmod>
 	</url>
 </urlset>
