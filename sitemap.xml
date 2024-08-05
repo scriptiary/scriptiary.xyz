@@ -3,21 +3,26 @@
 	<url>
 		<loc>https://scriptiary.xyz</loc>
 		<priority>1.00</priority>
-		<lastmod>2024-08-05</lastmod>
+		<lastmod>2024-08-06</lastmod>
 	</url>
 	<url>
 		<loc>https://scriptiary.xyz/legal/terms-of-service.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-04-12</lastmod>
+		<lastmod>2024-08-06</lastmod>
 	</url>
 	<url>
 		<loc>https://scriptiary.xyz/legal/privacy-policy.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-04-12</lastmod>
+		<lastmod>2024-08-06</lastmod>
+	</url>
+	<url>
+		<loc>https://scriptiary.xyz/articles/solara.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-08-06</lastmod>
 	</url>
 	<url>
 		<loc>https://scriptiary.xyz/articles/codex.html</loc>
 		<priority>0.33</priority>
-		<lastmod>2024-08-05</lastmod>
+		<lastmod>2024-08-06</lastmod>
 	</url>
 </urlset>
