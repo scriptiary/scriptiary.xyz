@@ -6,12 +6,7 @@
 		<lastmod>2024-08-06</lastmod>
 	</url>
 	<url>
-		<loc>https://scriptiary.xyz/legal/terms-of-service.html</loc>
-		<priority>0.33</priority>
-		<lastmod>2024-08-06</lastmod>
-	</url>
-	<url>
-		<loc>https://scriptiary.xyz/legal/privacy-policy.html</loc>
+		<loc>https://scriptiary.xyz/articles/codex.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-08-06</lastmod>
 	</url>
@@ -21,7 +16,12 @@
 		<lastmod>2024-08-06</lastmod>
 	</url>
 	<url>
-		<loc>https://scriptiary.xyz/articles/codex.html</loc>
+		<loc>https://scriptiary.xyz/legal/privacy-policy.html</loc>
+		<priority>0.33</priority>
+		<lastmod>2024-08-06</lastmod>
+	</url>
+	<url>
+		<loc>https://scriptiary.xyz/legal/terms-of-service.html</loc>
 		<priority>0.33</priority>
 		<lastmod>2024-08-06</lastmod>
 	</url>
